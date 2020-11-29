@@ -60,6 +60,8 @@ func main() {
 			"fields.tag": "hello",
 			"user.id":    123,
 			"user.name":  name,
+			"tracing.trace.id": "aabc:222:33a",
+			"tracing.transaction.id": "abc-2ww-abcd",
 		}).Info(message)
 
 		c.JSON(http.StatusOK, gin.H{
